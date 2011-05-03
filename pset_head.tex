@@ -1,0 +1,32 @@
+\newcommand{\name}[1]{\def\psettitlename{#1}}
+\newcommand{\course}[1]{\def\psettitlecourse{#1}}
+\newcommand{\rsection}[1]{\def\psettitlersection{#1}}
+\newcommand{\psetnum}[1]{\def\psettitlepsetnum{#1}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{67pt}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{\thepage}
+\fancyhead[R]
+{
+\psettitlename \\
+\psettitlecourse{} Problem Set \psettitlepsetnum \\
+\ifx\psettitlersection\empty
+\else
+Recitation Section \psettitlersection
+\fi
+}
+\renewcommand{\footruleskip}{0pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\footskip}{10pt}
+\setlength{\headwidth}{\textwidth}
+\setlength{\headsep}{20pt}
+\setlength{\marginparwidth}{0pt}
+\parindent=0pt
+
+\name{}
+\course{}
+\rsection{}
+\psetnum{}
